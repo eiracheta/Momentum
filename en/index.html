@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Momentum Merchants - Proveedores especializados en vehículos tácticos y blindados para fuerzas armadas, sector público y privado en México y Latinoamérica">
-    <meta name="keywords" content="vehículos blindados, vehículos tácticos, fuerzas armadas, defensa, México, proveedor militar">
+    <meta name="description" content="Momentum Merchants - Specialized providers of tactical and armored vehicles for armed forces, public and private sectors in Mexico and Latin America">
+    <meta name="keywords" content="armored vehicles, tactical vehicles, armed forces, defense, Mexico, military supplier">
     <meta name="author" content="Momentum Merchants">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Momentum Merchants | Soluciones Tácticas y Blindadas">
-    <meta property="og:description" content="Proveedores especializados en vehículos tácticos y blindados para fuerzas armadas y sector público">
+    <meta property="og:title" content="Momentum Merchants | Tactical & Armored Solutions">
+    <meta property="og:description" content="Specialized providers of tactical and armored vehicles for armed forces and public sector">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_MX">
+    <meta property="og:locale" content="en_US">
 
-    <title>Momentum Merchants | Soluciones Tácticas y Blindadas</title>
+    <title>Momentum Merchants | Tactical & Armored Solutions</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -169,17 +169,6 @@
 
         .btn-secondary:hover {
             background-color: var(--color-black);
-            color: var(--color-white);
-        }
-
-        .btn-white {
-            background-color: var(--color-white);
-            color: var(--color-black);
-            border-color: var(--color-white);
-        }
-
-        .btn-white:hover {
-            background-color: transparent;
             color: var(--color-white);
         }
 
@@ -464,33 +453,6 @@
             box-shadow: var(--shadow-lg);
         }
 
-        .hero-image-placeholder {
-            aspect-ratio: 4/3;
-            background-color: var(--color-gray-light);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            border: 1px solid var(--color-gray-light);
-        }
-
-        .placeholder-icon {
-            width: 80px;
-            height: 80px;
-            opacity: 0.3;
-        }
-
-        .placeholder-text {
-            font-family: var(--font-primary);
-            font-size: 0.875rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--color-gray-medium);
-            opacity: 0.6;
-        }
-
         /* ========================================
            ABOUT SECTION
         ======================================== */
@@ -747,25 +709,6 @@
             transform: scale(1.05);
         }
 
-        .product-image-placeholder {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: var(--color-gray);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            transition: var(--transition-slow);
-        }
-
-        .product-card:hover .product-image-placeholder {
-            transform: scale(1.05);
-        }
-
         .product-overlay {
             position: absolute;
             top: 0;
@@ -891,22 +834,6 @@
             text-align: center;
         }
 
-        .partners-map {
-            background-color: var(--color-white);
-            padding: 3rem;
-            border: 1px solid var(--color-gray-light);
-        }
-
-        .map-placeholder {
-            aspect-ratio: 21/9;
-            background-color: var(--color-gray-lighter);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
-
         /* ========================================
            WHY US SECTION
         ======================================== */
@@ -1023,17 +950,6 @@
 
         .contact-item a:hover {
             color: var(--color-black);
-        }
-
-        .contact-map-placeholder {
-            aspect-ratio: 16/9;
-            background-color: var(--color-gray-light);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-top: 2rem;
         }
 
         .contact-map {
@@ -1482,25 +1398,25 @@
     ======================================== -->
     <header class="header" id="header">
         <div class="header-container">
-            <a href="#inicio" class="logo-link">
-                <img src="assets/logo.png" alt="Momentum Merchants" class="logo">
+            <a href="#home" class="logo-link">
+                <img src="../assets/logo.png" alt="Momentum Merchants" class="logo">
             </a>
 
             <nav class="nav-desktop">
-                <a href="#inicio" class="nav-link active">Inicio</a>
-                <a href="#nosotros" class="nav-link">Nosotros</a>
-                <a href="#soluciones" class="nav-link">Soluciones</a>
-                <a href="#productos" class="nav-link">Productos</a>
-                <a href="#alianzas" class="nav-link">Alianzas</a>
-                <a href="#contacto" class="btn btn-primary nav-cta">Contacto</a>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#partners" class="nav-link">Partners</a>
+                <a href="#contact" class="btn btn-primary nav-cta">Contact</a>
                 <div class="lang-switch">
-                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
                     <span class="lang-separator">|</span>
-                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn active" data-lang="en">EN</button>
                 </div>
             </nav>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -1508,16 +1424,16 @@
         </div>
 
         <nav class="nav-mobile" id="navMobile">
-            <a href="#inicio" class="nav-link">Inicio</a>
-            <a href="#nosotros" class="nav-link">Nosotros</a>
-            <a href="#soluciones" class="nav-link">Soluciones</a>
-            <a href="#productos" class="nav-link">Productos</a>
-            <a href="#alianzas" class="nav-link">Alianzas</a>
-            <a href="#contacto" class="btn btn-primary">Contacto</a>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#solutions" class="nav-link">Solutions</a>
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#partners" class="nav-link">Partners</a>
+            <a href="#contact" class="btn btn-primary">Contact</a>
             <div class="lang-switch" style="border-left: none; margin-top: 1rem;">
-                <button class="lang-btn active" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="es">ES</button>
                 <span class="lang-separator">|</span>
-                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn active" data-lang="en">EN</button>
             </div>
         </nav>
     </header>
@@ -1525,22 +1441,22 @@
     <!-- ========================================
          HERO SECTION
     ======================================== -->
-    <section class="hero" id="inicio">
+    <section class="hero" id="home">
         <div class="hero-bg">
             <div class="hero-bg-pattern"></div>
         </div>
         <div class="container hero-container">
             <div class="hero-content">
-                <span class="hero-tag">Soluciones de Defensa</span>
-                <h1 class="hero-title">Aliados Estratégicos en Vehículos Tácticos y Blindados</h1>
-                <p class="hero-subtitle">Conectamos a fabricantes globales con instituciones de defensa y seguridad en México y Latinoamérica. Expertise, confiabilidad y soluciones integrales.</p>
+                <span class="hero-tag">Defense Solutions</span>
+                <h1 class="hero-title">Strategic Partners in Tactical & Armored Vehicles</h1>
+                <p class="hero-subtitle">We connect global manufacturers with defense and security institutions in Mexico and Latin America. Expertise, reliability, and comprehensive solutions.</p>
                 <div class="hero-buttons">
-                    <a href="#contacto" class="btn btn-primary">Solicitar Información</a>
-                    <a href="#soluciones" class="btn btn-secondary">Conocer Soluciones</a>
+                    <a href="#contact" class="btn btn-primary">Request Information</a>
+                    <a href="#solutions" class="btn btn-secondary">View Solutions</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/images/product-APC.jpg" alt="Vehículo Blindado APC - Momentum Merchants" class="hero-img">
+                <img src="../assets/images/product-APC.jpg" alt="Armored APC Vehicle - Momentum Merchants" class="hero-img">
             </div>
         </div>
     </section>
@@ -1548,20 +1464,20 @@
     <!-- ========================================
          ABOUT SECTION
     ======================================== -->
-    <section class="section" id="nosotros">
+    <section class="section" id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image fade-in">
                     <div class="about-carousel">
                         <div class="about-carousel-track" id="aboutCarouselTrack">
                             <div class="about-carousel-slide">
-                                <img src="assets/images/manufacturing1.jpg" alt="Proceso de manufactura 1">
+                                <img src="../assets/images/manufacturing1.jpg" alt="Manufacturing process 1">
                             </div>
                             <div class="about-carousel-slide">
-                                <img src="assets/images/manufacturing2.jpg" alt="Proceso de manufactura 2">
+                                <img src="../assets/images/manufacturing2.jpg" alt="Manufacturing process 2">
                             </div>
                             <div class="about-carousel-slide">
-                                <img src="assets/images/manufacturing3.jpg" alt="Proceso de manufactura 3">
+                                <img src="../assets/images/manufacturing3.jpg" alt="Manufacturing process 3">
                             </div>
                         </div>
                         <div class="about-carousel-dots">
@@ -1572,10 +1488,10 @@
                     </div>
                 </div>
                 <div class="about-content fade-in">
-                    <span class="section-tag">Quiénes Somos</span>
-                    <h2>Experiencia y Compromiso en el Sector Defensa</h2>
-                    <p>Momentum Merchants es un proveedor especializado en soluciones de movilidad táctica y blindada para fuerzas armadas, instituciones de seguridad pública y empresas del sector privado que requieren protección de alto nivel.</p>
-                    <p>Nuestra misión es ser el puente confiable entre los fabricantes líderes a nivel mundial y las instituciones que demandan equipamiento de defensa en México y Latinoamérica.</p>
+                    <span class="section-tag">About Us</span>
+                    <h2>Experience and Commitment in the Defense Sector</h2>
+                    <p>Momentum Merchants is a specialized provider of tactical and armored mobility solutions for armed forces, public security institutions, and private sector companies requiring high-level protection.</p>
+                    <p>Our mission is to be the reliable bridge between leading global manufacturers and institutions demanding defense equipment in Mexico and Latin America.</p>
 
                     <div class="about-values">
                         <div class="value-item">
@@ -1583,8 +1499,8 @@
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                             </svg>
                             <div>
-                                <h4>Integridad</h4>
-                                <p>Transparencia y ética en cada operación</p>
+                                <h4>Integrity</h4>
+                                <p>Transparency and ethics in every operation</p>
                             </div>
                         </div>
                         <div class="value-item">
@@ -1593,8 +1509,8 @@
                                 <path d="M12 6v6l4 2"/>
                             </svg>
                             <div>
-                                <h4>Eficiencia</h4>
-                                <p>Procesos ágiles y resultados medibles</p>
+                                <h4>Efficiency</h4>
+                                <p>Agile processes and measurable results</p>
                             </div>
                         </div>
                         <div class="value-item">
@@ -1603,8 +1519,8 @@
                                 <polyline points="22 4 12 14.01 9 11.01"/>
                             </svg>
                             <div>
-                                <h4>Excelencia</h4>
-                                <p>Estándares de calidad internacional</p>
+                                <h4>Excellence</h4>
+                                <p>International quality standards</p>
                             </div>
                         </div>
                         <div class="value-item">
@@ -1615,8 +1531,8 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                             </svg>
                             <div>
-                                <h4>Compromiso</h4>
-                                <p>Alianzas de largo plazo con clientes</p>
+                                <h4>Commitment</h4>
+                                <p>Long-term partnerships with clients</p>
                             </div>
                         </div>
                     </div>
@@ -1627,19 +1543,19 @@
             <div class="stats fade-in">
                 <div class="stat-item">
                     <div class="stat-number">15+</div>
-                    <div class="stat-label">Años de Experiencia</div>
+                    <div class="stat-label">Years of Experience</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">25+</div>
-                    <div class="stat-label">Fabricantes Aliados</div>
+                    <div class="stat-label">Allied Manufacturers</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">100+</div>
-                    <div class="stat-label">Proyectos Entregados</div>
+                    <div class="stat-label">Delivered Projects</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">8</div>
-                    <div class="stat-label">Países Atendidos</div>
+                    <div class="stat-label">Countries Served</div>
                 </div>
             </div>
         </div>
@@ -1648,12 +1564,12 @@
     <!-- ========================================
          SOLUTIONS SECTION
     ======================================== -->
-    <section class="section bg-light" id="soluciones">
+    <section class="section bg-light" id="solutions">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="section-tag">Nuestras Soluciones</span>
-                <h2 class="section-title">Servicios Integrales de Defensa</h2>
-                <p class="section-subtitle">Ofrecemos un portafolio completo de servicios para satisfacer las necesidades de equipamiento táctico y blindado de su institución.</p>
+                <span class="section-tag">Our Solutions</span>
+                <h2 class="section-title">Comprehensive Defense Services</h2>
+                <p class="section-subtitle">We offer a complete portfolio of services to meet your institution's tactical and armored equipment needs.</p>
             </div>
 
             <div class="solutions-grid">
@@ -1662,8 +1578,8 @@
                         <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                         <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                     </svg>
-                    <h3>Asesoría Estratégica</h3>
-                    <p>Consultoría especializada en adquisiciones militares, análisis de requerimientos y definición de especificaciones técnicas.</p>
+                    <h3>Strategic Advisory</h3>
+                    <p>Specialized consulting in military acquisitions, requirements analysis, and technical specifications definition.</p>
                 </div>
 
                 <div class="solution-card fade-in">
@@ -1672,16 +1588,16 @@
                         <line x1="2" y1="12" x2="22" y2="12"/>
                         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                     </svg>
-                    <h3>Gestión Internacional</h3>
-                    <p>Coordinación con fabricantes globales, logística internacional y gestión de importaciones especializadas.</p>
+                    <h3>International Management</h3>
+                    <p>Coordination with global manufacturers, international logistics, and specialized import management.</p>
                 </div>
 
                 <div class="solution-card fade-in">
                     <svg class="solution-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                         <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
                     </svg>
-                    <h3>Soporte Técnico</h3>
-                    <p>Mantenimiento preventivo y correctivo, capacitación de operadores y soporte post-venta continuo.</p>
+                    <h3>Technical Support</h3>
+                    <p>Preventive and corrective maintenance, operator training, and continuous after-sales support.</p>
                 </div>
 
                 <div class="solution-card fade-in">
@@ -1690,8 +1606,8 @@
                         <polyline points="2 17 12 22 22 17"/>
                         <polyline points="2 12 12 17 22 12"/>
                     </svg>
-                    <h3>Soluciones a Medida</h3>
-                    <p>Desarrollo de proyectos personalizados según requerimientos específicos de cada institución.</p>
+                    <h3>Custom Solutions</h3>
+                    <p>Development of customized projects according to specific requirements of each institution.</p>
                 </div>
             </div>
         </div>
@@ -1700,21 +1616,21 @@
     <!-- ========================================
          PRODUCTS SECTION
     ======================================== -->
-    <section class="section" id="productos">
+    <section class="section" id="products">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="section-tag">Categorías</span>
-                <h2 class="section-title">Portafolio de Productos</h2>
-                <p class="section-subtitle">Representamos a los principales fabricantes de equipamiento táctico y blindado a nivel mundial.</p>
+                <span class="section-tag">Categories</span>
+                <h2 class="section-title">Product Portfolio</h2>
+                <p class="section-subtitle">We represent the leading manufacturers of tactical and armored equipment worldwide.</p>
             </div>
 
             <div class="products-grid">
                 <div class="product-card fade-in">
-                    <div class="product-image" style="background-image: url('assets/images/product-APC.jpg');"></div>
+                    <div class="product-image" style="background-image: url('../assets/images/product-APC.jpg');"></div>
                     <div class="product-overlay">
-                        <span class="product-tag">Transporte Blindado</span>
-                        <h3>APC - Transporte de Personal</h3>
-                        <p>Vehículos blindados de transporte de personal con protección balística certificada para operaciones tácticas y misiones críticas.</p>
+                        <span class="product-tag">Armored Transport</span>
+                        <h3>APC - Personnel Carriers</h3>
+                        <p>Armored personnel carriers with certified ballistic protection for tactical operations and critical missions.</p>
                     </div>
                     <div class="product-arrow">
                         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
@@ -1725,11 +1641,11 @@
                 </div>
 
                 <div class="product-card fade-in">
-                    <div class="product-image" style="background-image: url('assets/images/product-commercial.jpg');"></div>
+                    <div class="product-image" style="background-image: url('../assets/images/product-commercial.jpg');"></div>
                     <div class="product-overlay">
-                        <span class="product-tag">Seguridad Ejecutiva</span>
-                        <h3>Vehículos Comerciales Blindados</h3>
-                        <p>Soluciones de blindaje para vehículos comerciales y ejecutivos, ideales para protección de funcionarios y sector privado.</p>
+                        <span class="product-tag">Executive Security</span>
+                        <h3>Commercial Armored Vehicles</h3>
+                        <p>Armoring solutions for commercial and executive vehicles, ideal for protecting officials and private sector.</p>
                     </div>
                     <div class="product-arrow">
                         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
@@ -1740,11 +1656,11 @@
                 </div>
 
                 <div class="product-card fade-in">
-                    <div class="product-image" style="background-image: url('assets/images/product-medvac.jpg');"></div>
+                    <div class="product-image" style="background-image: url('../assets/images/product-medvac.jpg');"></div>
                     <div class="product-overlay">
-                        <span class="product-tag">Evacuación Médica</span>
-                        <h3>MEDVAC - Ambulancias Blindadas</h3>
-                        <p>Vehículos blindados de evacuación médica equipados para atención y traslado de personal en zonas de conflicto.</p>
+                        <span class="product-tag">Medical Evacuation</span>
+                        <h3>MEDVAC - Armored Ambulances</h3>
+                        <p>Armored medical evacuation vehicles equipped for care and transfer of personnel in conflict zones.</p>
                     </div>
                     <div class="product-arrow">
                         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
@@ -1755,11 +1671,11 @@
                 </div>
 
                 <div class="product-card fade-in">
-                    <div class="product-image" style="background-image: url('assets/images/product-mrap.jpg');"></div>
+                    <div class="product-image" style="background-image: url('../assets/images/product-mrap.jpg');"></div>
                     <div class="product-overlay">
-                        <span class="product-tag">Protección Antiminas</span>
-                        <h3>MRAP - Resistente a Emboscadas</h3>
-                        <p>Vehículos con protección contra minas y emboscadas, diseñados para operaciones en entornos de alto riesgo.</p>
+                        <span class="product-tag">Mine Protection</span>
+                        <h3>MRAP - Ambush Resistant</h3>
+                        <p>Vehicles with mine and ambush protection, designed for operations in high-risk environments.</p>
                     </div>
                     <div class="product-arrow">
                         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
@@ -1775,47 +1691,46 @@
     <!-- ========================================
          PARTNERS SECTION
     ======================================== -->
-    <section class="section bg-light" id="alianzas">
+    <section class="section bg-light" id="partners">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="section-tag">Red Global</span>
-                <h2 class="section-title">Fabricantes y Alianzas</h2>
+                <span class="section-tag">Global Network</span>
+                <h2 class="section-title">Manufacturers & Partnerships</h2>
             </div>
 
             <div class="partners-intro fade-in">
-                <p>Mantenemos alianzas estratégicas con los fabricantes más reconocidos de la industria de defensa mundial. Nuestra red nos permite ofrecer las mejores soluciones disponibles en el mercado, adaptadas a las necesidades específicas de cada cliente.</p>
+                <p>We maintain strategic alliances with the most recognized manufacturers in the global defense industry. Our network allows us to offer the best solutions available in the market, adapted to the specific needs of each client.</p>
             </div>
 
             <div class="partners-grid fade-in">
                 <div class="partner-logo">
-                    <img src="assets/images/partner-1.png" alt="Roshel - Fabricante de Vehículos Blindados">
+                    <img src="../assets/images/partner-1.png" alt="Roshel - Armored Vehicle Manufacturer">
                 </div>
                 <div class="partner-logo">
-                    <img src="assets/images/partner-scania.png" alt="Scania - Fabricante de Vehículos">
+                    <img src="../assets/images/partner-scania.png" alt="Scania - Vehicle Manufacturer">
                 </div>
                 <div class="partner-logo">
-                    <img src="assets/images/partner-continental.png" alt="Continental - Neumáticos y Componentes">
+                    <img src="../assets/images/partner-continental.png" alt="Continental - Tires and Components">
                 </div>
                 <div class="partner-logo">
-                    <img src="assets/images/partner-dillon.png" alt="Dillon Aero - Sistemas de Armas">
+                    <img src="../assets/images/partner-dillon.png" alt="Dillon Aero - Weapon Systems">
                 </div>
                 <div class="partner-logo">
-                    <img src="assets/images/partner-agp.png" alt="AGP - Cristales Blindados">
+                    <img src="../assets/images/partner-agp.png" alt="AGP - Ballistic Glass">
                 </div>
             </div>
-
         </div>
     </section>
 
     <!-- ========================================
          WHY US SECTION
     ======================================== -->
-    <section class="section" id="porque">
+    <section class="section" id="whyus">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="section-tag">Diferenciadores</span>
-                <h2 class="section-title">¿Por Qué Momentum Merchants?</h2>
-                <p class="section-subtitle">Somos su aliado estratégico en soluciones de defensa y seguridad.</p>
+                <span class="section-tag">Differentiators</span>
+                <h2 class="section-title">Why Momentum Merchants?</h2>
+                <p class="section-subtitle">We are your strategic partner in defense and security solutions.</p>
             </div>
 
             <div class="why-grid">
@@ -1826,8 +1741,8 @@
                             <polyline points="22 4 12 14.01 9 11.01"/>
                         </svg>
                     </div>
-                    <h3>Experiencia Comprobada</h3>
-                    <p>Más de 15 años atendiendo las necesidades del sector público y fuerzas armadas en la región.</p>
+                    <h3>Proven Experience</h3>
+                    <p>Over 15 years serving the needs of the public sector and armed forces in the region.</p>
                 </div>
 
                 <div class="why-card fade-in">
@@ -1838,8 +1753,8 @@
                             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                         </svg>
                     </div>
-                    <h3>Red Global</h3>
-                    <p>Acceso a los principales fabricantes de vehículos tácticos y blindados a nivel mundial.</p>
+                    <h3>Global Network</h3>
+                    <p>Access to leading manufacturers of tactical and armored vehicles worldwide.</p>
                 </div>
 
                 <div class="why-card fade-in">
@@ -1852,8 +1767,8 @@
                             <polyline points="10 9 9 9 8 9"/>
                         </svg>
                     </div>
-                    <h3>Cumplimiento Normativo</h3>
-                    <p>Conocimiento profundo de regulaciones y certificaciones requeridas en adquisiciones gubernamentales.</p>
+                    <h3>Regulatory Compliance</h3>
+                    <p>Deep knowledge of regulations and certifications required in government acquisitions.</p>
                 </div>
 
                 <div class="why-card fade-in">
@@ -1865,8 +1780,8 @@
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                         </svg>
                     </div>
-                    <h3>Soporte Integral</h3>
-                    <p>Acompañamiento completo desde la evaluación inicial hasta el soporte post-venta y mantenimiento.</p>
+                    <h3>Comprehensive Support</h3>
+                    <p>Complete accompaniment from initial evaluation to after-sales support and maintenance.</p>
                 </div>
             </div>
         </div>
@@ -1875,13 +1790,13 @@
     <!-- ========================================
          CONTACT SECTION
     ======================================== -->
-    <section class="section bg-light" id="contacto">
+    <section class="section bg-light" id="contact">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info fade-in">
-                    <span class="section-tag">Contacto</span>
-                    <h2>Iniciemos una Conversación</h2>
-                    <p>Estamos listos para atender sus requerimientos de equipamiento táctico y blindado. Complete el formulario o contáctenos directamente.</p>
+                    <span class="section-tag">Contact</span>
+                    <h2>Let's Start a Conversation</h2>
+                    <p>We are ready to address your tactical and armored equipment requirements. Fill out the form or contact us directly.</p>
 
                     <div class="contact-details">
                         <div class="contact-item">
@@ -1890,8 +1805,8 @@
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
                             <div>
-                                <h4>Ubicación</h4>
-                                <p>Ciudad de México, México</p>
+                                <h4>Location</h4>
+                                <p>Mexico City, Mexico</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -1900,7 +1815,7 @@
                                 <polyline points="22,6 12,13 2,6"/>
                             </svg>
                             <div>
-                                <h4>Correo Electrónico</h4>
+                                <h4>Email</h4>
                                 <a href="mailto:ventas@momentum-merchants.mx">ventas@momentum-merchants.mx</a>
                             </div>
                         </div>
@@ -1909,7 +1824,7 @@
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                             </svg>
                             <div>
-                                <h4>Teléfono</h4>
+                                <h4>Phone</h4>
                                 <a href="tel:+529988500107">+52 998 850 0107</a>
                             </div>
                         </div>
@@ -1917,7 +1832,7 @@
 
                     <div class="contact-map">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240863.4500351466!2d-99.42380635!3d19.3909832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1704600000000!5m2!1ses!2smx"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240863.4500351466!2d-99.42380635!3d19.3909832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sMexico%20City%2C%20CDMX!5e0!3m2!1sen!2smx!4v1704600000000!5m2!1sen!2smx"
                             width="100%"
                             height="250"
                             style="border:0;"
@@ -1932,50 +1847,50 @@
                     <form class="contact-form" id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="nombre">Nombre <span class="required">*</span></label>
-                                <input type="text" id="nombre" name="nombre" required>
-                                <span class="error-message">Por favor ingrese su nombre</span>
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message">Please enter your name</span>
                             </div>
                             <div class="form-group">
-                                <label for="organizacion">Organización / Institución</label>
-                                <input type="text" id="organizacion" name="organizacion">
+                                <label for="organization">Organization / Institution</label>
+                                <input type="text" id="organization" name="organization">
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="email">Correo Electrónico <span class="required">*</span></label>
+                                <label for="email">Email <span class="required">*</span></label>
                                 <input type="email" id="email" name="email" required>
-                                <span class="error-message">Por favor ingrese un correo válido</span>
+                                <span class="error-message">Please enter a valid email</span>
                             </div>
                             <div class="form-group">
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="interes">Tipo de Interés <span class="required">*</span></label>
-                            <select id="interes" name="interes" required>
-                                <option value="">Seleccione una opción</option>
-                                <option value="apc">APC - Transporte de Personal</option>
-                                <option value="comercial">Vehículos Comerciales Blindados</option>
-                                <option value="medvac">MEDVAC - Ambulancias Blindadas</option>
-                                <option value="mrap">MRAP - Resistente a Emboscadas</option>
-                                <option value="asesoria">Asesoría y Consultoría</option>
-                                <option value="otro">Otro</option>
+                            <label for="interest">Type of Interest <span class="required">*</span></label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="apc">APC - Personnel Carriers</option>
+                                <option value="commercial">Commercial Armored Vehicles</option>
+                                <option value="medvac">MEDVAC - Armored Ambulances</option>
+                                <option value="mrap">MRAP - Ambush Resistant</option>
+                                <option value="consulting">Advisory & Consulting</option>
+                                <option value="other">Other</option>
                             </select>
-                            <span class="error-message">Por favor seleccione una opción</span>
+                            <span class="error-message">Please select an option</span>
                         </div>
 
                         <div class="form-group">
-                            <label for="mensaje">Mensaje <span class="required">*</span></label>
-                            <textarea id="mensaje" name="mensaje" placeholder="Describa brevemente sus requerimientos..." required></textarea>
-                            <span class="error-message">Por favor ingrese su mensaje</span>
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" placeholder="Briefly describe your requirements..." required></textarea>
+                            <span class="error-message">Please enter your message</span>
                         </div>
 
                         <div class="form-submit">
-                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
                         </div>
                     </form>
 
@@ -1984,8 +1899,8 @@
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                             <polyline points="22 4 12 14.01 9 11.01"/>
                         </svg>
-                        <h3>Mensaje Enviado</h3>
-                        <p>Gracias por contactarnos. Nos comunicaremos con usted a la brevedad.</p>
+                        <h3>Message Sent</h3>
+                        <p>Thank you for contacting us. We will get back to you shortly.</p>
                     </div>
                 </div>
             </div>
@@ -1999,34 +1914,34 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/logo.png" alt="Momentum Merchants" class="logo-white">
-                    <p>Proveedores especializados en soluciones de movilidad táctica y blindada para fuerzas armadas y sector público en México y Latinoamérica.</p>
+                    <img src="../assets/logo.png" alt="Momentum Merchants" class="logo-white">
+                    <p>Specialized providers of tactical and armored mobility solutions for armed forces and public sector in Mexico and Latin America.</p>
                 </div>
 
                 <div class="footer-nav">
-                    <h4 class="footer-title">Navegación</h4>
+                    <h4 class="footer-title">Navigation</h4>
                     <ul class="footer-links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#soluciones">Soluciones</a></li>
-                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#products">Products</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-nav">
-                    <h4 class="footer-title">Productos</h4>
+                    <h4 class="footer-title">Products</h4>
                     <ul class="footer-links">
-                        <li><a href="#productos">APC - Transporte de Personal</a></li>
-                        <li><a href="#productos">Vehículos Comerciales</a></li>
-                        <li><a href="#productos">MEDVAC - Ambulancias</a></li>
-                        <li><a href="#productos">MRAP</a></li>
+                        <li><a href="#products">APC - Personnel Carriers</a></li>
+                        <li><a href="#products">Commercial Vehicles</a></li>
+                        <li><a href="#products">MEDVAC - Ambulances</a></li>
+                        <li><a href="#products">MRAP</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-contact">
-                    <h4 class="footer-title">Contacto</h4>
+                    <h4 class="footer-title">Contact</h4>
                     <ul class="footer-links">
-                        <li>Ciudad de México, México</li>
+                        <li>Mexico City, Mexico</li>
                         <li><a href="mailto:ventas@momentum-merchants.mx">ventas@momentum-merchants.mx</a></li>
                         <li><a href="tel:+529988500107">+52 998 850 0107</a></li>
                     </ul>
@@ -2043,8 +1958,8 @@
             </div>
 
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 Momentum Merchants. Todos los derechos reservados.</p>
-                <p class="footer-tagline">Proveedores especializados en soluciones tácticas y blindadas</p>
+                <p class="footer-copyright">© 2026 Momentum Merchants. All rights reserved.</p>
+                <p class="footer-tagline">Specialized providers of tactical and armored solutions</p>
             </div>
         </div>
     </footer>
@@ -2256,8 +2171,8 @@
             btn.addEventListener('click', () => {
                 const lang = btn.dataset.lang;
 
-                if (lang === 'en') {
-                    window.location.href = 'en/index.html';
+                if (lang === 'es') {
+                    window.location.href = '../index.html';
                 }
             });
         });
