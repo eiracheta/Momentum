@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Momentum Merchants - Somos proveedores de vehículos tácticos y blindados para sector público, privado y fuerzas armadas">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Momentum Merchants | Próximamente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-white: #FFFFFF;
+            --color-black: #000000;
+            --color-gray: #2B2B2B;
+            --color-gray-light: #E5E5E5;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--color-white);
+            color: var(--color-black);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            overflow-x: hidden;
+        }
+
+        /* Container principal */
+        .container {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Logo */
+        .logo-container {
+            margin-bottom: 3rem;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        .logo {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Título principal */
+        .title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: var(--color-black);
+            position: relative;
+        }
+
+        .title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-black);
+            margin: 1rem auto 0;
+            animation: expandLine 1.5s ease-out 0.5s both;
+        }
+
+        /* Descripción */
+        .description {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 500;
+            color: var(--color-gray);
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            letter-spacing: 0.05em;
+        }
+
+        /* Indicador de progreso militar */
+        .progress-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-gray);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background-color: var(--color-gray-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 65%;
+            background-color: var(--color-black);
+            animation: progressLoad 2s ease-out 0.8s both;
+        }
+
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(255, 255, 255, 0.4) 50%,
+                transparent 100%
+            );
+            animation: shimmer 2s infinite 3s;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            color: var(--color-gray);
+            text-transform: uppercase;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes expandLine {
+            from {
+                width: 0;
+            }
+            to {
+                width: 80px;
+            }
+        }
+
+        @keyframes progressLoad {
+            from {
+                width: 0;
+            }
+            to {
+                width: 65%;
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 1.5rem;
+                padding-bottom: 5rem;
+            }
+
+            .logo {
+                max-width: 200px;
+            }
+
+            .logo-container {
+                margin-bottom: 2rem;
+            }
+
+            .title {
+                letter-spacing: 0.15em;
+            }
+
+            .description {
+                margin-bottom: 2rem;
+            }
+
+            .corner-mark {
+                display: none;
+            }
+
+            footer {
+                bottom: 1.5rem;
+                font-size: 0.65rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                max-width: 160px;
+            }
+
+            .title::after {
+                width: 60px;
+            }
+
+            @keyframes expandLine {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 60px;
+                }
+            }
+        }
+
+        /* Reducir animaciones si el usuario lo prefiere */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Momentum Merchants" class="logo">
+        </div>
+
+        <!-- Título -->
+        <h1 class="title">Próximamente</h1>
+
+        <!-- Descripción -->
+        <p class="description">
+            Somos proveedores de vehículos tácticos y blindados para sector público, privado y fuerzas armadas
+        </p>
+
+        <!-- Barra de progreso -->
+        <div class="progress-container">
+            <div class="progress-label">
+                <span>En desarrollo</span>
+                <span>65%</span>
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Momentum Merchants
+    </footer>
+</body>
+</html>
